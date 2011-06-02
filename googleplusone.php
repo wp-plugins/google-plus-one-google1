@@ -5,7 +5,7 @@
 Plugin Name: Google +1
 Plugin URI: http://www.appointy.com
 
-Description: New Google+1 button from Google. You can see a live Google+1 button on mashable.com.
+Description: New Google+1 button from Google. As seen on MASHABLE, TECHCRUNCH and many other websites.
 
 Version: 1.0.0
 Author: Appointy.com
