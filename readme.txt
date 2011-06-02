@@ -43,7 +43,8 @@ Follow the steps below to install the plugin.
 
 == Screenshots ==
 
-1. Preview of Google+1 button with count on your blog
+1. Preview of Google+1 button settings page.
+2. Preview of Google+1 button with count on your blog.
 
 
 == Help ==
