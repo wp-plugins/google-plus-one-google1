@@ -35,7 +35,7 @@ Follow the steps below to install the plugin.
 
 == Screenshots ==
 
-1. Preview of Facebook Share button with count on your blog
+1. Preview of Google+1 button with count on your blog
 
 
 == Help ==
