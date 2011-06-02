@@ -1,4 +1,4 @@
-=== Google +1 Button ===
+=== Wordpress plugin - Google +1 Button ===
 Contributors: Appointy.com
 Tags: Google+1, Google +1, Google Plus, +1, facebook, facebook share, twitter, retweet, voting, button, tweetmeme
 Requires at least: 2.7.2
@@ -21,14 +21,22 @@ Tested upto 3.1.3
 
 #### Integration
 
-* AUTOMATIC: Position it Before, After, Before/After on post or page. 
+* Position it Before, After, Before/After on post or page. 
+
+* Use custom CSS on the button code.
+
+* Ability to choose whether to display on post and/or pages. 
+
+* Ability to choose whether or not to SHOW COUNT.
+
+* Works well with New Facebook Share and Tweetmeme Button.
 
 
 == Installation ==
 
 Follow the steps below to install the plugin.
 
-1. Upload the Google-Plus-One directory to the /wp-content/plugins/ directory
+1. Upload the plugin directory to the /wp-content/plugins/ directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
 3. Go to "Google +1" option to configure the button
 

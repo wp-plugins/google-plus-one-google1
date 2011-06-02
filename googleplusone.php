@@ -2,7 +2,7 @@
 
 /*
 
-Plugin Name: "Google +1"
+Plugin Name: "Wordpress Plugin - Google +1 Button"
 Plugin URI: http://www.appointy.com
 
 Description: New Google+1 button from Google. As seen on MASHABLE, TECHCRUNCH and many other websites. (Has advanced CSS option for better positioning)
