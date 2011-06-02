@@ -3,9 +3,9 @@
 /*
 
 Plugin Name: Google +1
-Plugin URI: http://www.appointy.com/web/facebookshare
+Plugin URI: http://www.appointy.com
 
-Description: Adds a button which allows you to share post and also shows the number of times the post or page has been shared through out the Facebook just like tweetmeme button does for twitter. 
+Description: New Google+1 button from Google. You can see a live Google+1 button mashable.com
 
 Version: 1.0.0
 Author: Appointy.com
