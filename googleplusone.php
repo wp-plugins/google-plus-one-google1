@@ -5,7 +5,7 @@
 Plugin Name: Google +1
 Plugin URI: http://www.appointy.com
 
-Description: New Google+1 button from Google. As seen on MASHABLE, TECHCRUNCH and many other websites. It has advanced CSS option for better positioning on your post or page.
+Description: New Google+1 button from Google. As seen on MASHABLE, TECHCRUNCH and many other websites. (Has advanced CSS option for better positioning)
 
 Version: 2.0.0
 Author: Appointy.com
