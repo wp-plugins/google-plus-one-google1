@@ -1,6 +1,6 @@
 === Google +1 Button ===
 Contributors: Appointy.com
-Tags: Google Plus, +1, Google +1, Google+1, facebook, facebook share, twitter, retweet, voting, button, tweetmeme
+Tags: Google+1, Google +1, Google Plus, +1, facebook, facebook share, twitter, retweet, voting, button, tweetmeme
 Requires at least: 2.7.2
 Tested up to: 3.1.3
 Stable tag: 1.0.0
