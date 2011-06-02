@@ -7,7 +7,7 @@ Plugin URI: http://www.appointy.com
 
 Description: New Google+1 button from Google. As seen on MASHABLE, TECHCRUNCH and many other websites. It has advanced CSS option for better positioning on your post or page.
 
-Version: 1.0.0
+Version: 2.0.0
 Author: Appointy.com
 Author URI: http://www.appointy.com
 
