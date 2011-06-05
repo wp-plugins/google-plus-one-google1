@@ -2,18 +2,16 @@
 
 /*
 
-Plugin Name: "Wordpress Plugin - Google +1 Button"
-Plugin URI: http://www.appointy.com
+Plugin Name: WordPress plugin - Google +1 Button
+Plugin URI: http://www.appointy.com/
 
 Description: New Google+1 button from Google. As seen on MASHABLE, TECHCRUNCH and many other websites. (Has advanced CSS option for better positioning)
 
-Version: 2.0.1
+Version: 2.0.3
 Author: Appointy.com
 Author URI: http://www.appointy.com
 
 */
-
-// Check for location modifications in wp-config
 
 $parser ='';
 $write=0;
@@ -119,7 +117,143 @@ function googleone_options_page() {
        	      </div><div style="float:left">
             <img src="<?php echo GOOGLEONE_URL; ?>/images/google_plus_one.png" width="282" height="320" /></div>
             
-            <div style="clear:both;padding:10px 0px;"><strong>Where</strong><br />
+            <div style="clear:both;padding:10px 0px;"><strong>Language</strong> <br /><select id="googleone_lang" name="googleone_lang">
+                  <option value="ar" <?php if (get_option('googleone_lang') == 'ar') echo 'selected="selected"'; ?>>
+                    Arabic
+                  </option>
+                  <option value="bg" <?php if (get_option('googleone_lang') == 'bg') echo 'selected="selected"'; ?>>
+                    Bulgarian
+                  </option>
+                  <option value="ca" <?php if (get_option('googleone_lang') == 'ca') echo 'selected="selected"'; ?>>
+                    Catalan
+                  </option>
+                  <option value="zh-CN" <?php if (get_option('googleone_lang') == 'zh-CN') echo 'selected="selected"'; ?>>
+                    Chinese (Simplified)
+                  </option>
+                  <option value="zh-TW" <?php if (get_option('googleone_lang') == 'zh-TW') echo 'selected="selected"'; ?>>
+                    Chinese (Traditional)
+                  </option>
+                  <option value="hr" <?php if (get_option('googleone_lang') == 'hr') echo 'selected="selected"'; ?>>
+                    Croatian
+                  </option>
+                  <option value="cs" <?php if (get_option('googleone_lang') == 'cs') echo 'selected="selected"'; ?>>
+                    Czech
+                  </option>
+                  <option value="da" <?php if (get_option('googleone_lang') == 'da') echo 'selected="selected"'; ?>>
+                    Danish
+                  </option>
+                  <option value="nl" <?php if (get_option('googleone_lang') == 'nl') echo 'selected="selected"'; ?>>
+                    Dutch
+                  </option>
+                  <option value="en-US" <?php if (get_option('googleone_lang') == 'en-US') echo 'selected="selected"'; ?>>
+                    English (US)
+                  </option>
+                  <option value="en-GB" <?php if (get_option('googleone_lang') == 'en-GB') echo 'selected="selected"'; ?>>
+                    English (UK)
+                  </option>
+                  <option value="et" <?php if (get_option('googleone_lang') == 'et') echo 'selected="selected"'; ?>>
+                    Estonian
+                  </option>
+                  <option value="fil" <?php if (get_option('googleone_lang') == 'fil') echo 'selected="selected"'; ?>>
+                    Filipino
+                  </option>
+                  <option value="fi" <?php if (get_option('googleone_lang') == 'fi') echo 'selected="selected"'; ?>>
+                    Finnish
+                  </option>
+                  <option value="fr" <?php if (get_option('googleone_lang') == 'fr') echo 'selected="selected"'; ?>>
+                    French
+                  </option>
+                  <option value="de" <?php if (get_option('googleone_lang') == 'de') echo 'selected="selected"'; ?>>
+                    German
+                  </option>
+                  <option value="el" <?php if (get_option('googleone_lang') == 'el') echo 'selected="selected"'; ?>>
+                    Greek
+                  </option>
+                  <option value="iw" <?php if (get_option('googleone_lang') == 'iw') echo 'selected="selected"'; ?>>
+                    Hebrew
+                  </option>
+                  <option value="hi" <?php if (get_option('googleone_lang') == 'hi') echo 'selected="selected"'; ?>>
+                    Hindi
+                  </option>
+                  <option value="hu" <?php if (get_option('googleone_lang') == 'hu') echo 'selected="selected"'; ?>>
+                    Hungarian
+                  </option>
+                  <option value="id" <?php if (get_option('googleone_lang') == 'id') echo 'selected="selected"'; ?>>
+                    Indonesian
+                  </option>
+                  <option value="it" <?php if (get_option('googleone_lang') == 'it') echo 'selected="selected"'; ?>>
+                    Italian
+                  </option>
+                  <option value="ja" <?php if (get_option('googleone_lang') == 'ja') echo 'selected="selected"'; ?>>
+                    Japanese
+                  </option>
+                  <option value="ko" <?php if (get_option('googleone_lang') == 'ko') echo 'selected="selected"'; ?>>
+                    Korean
+                  </option>
+                  <option value="lv" <?php if (get_option('googleone_lang') == 'lv') echo 'selected="selected"'; ?>>
+                    Latvian
+                  </option>
+                  <option value="lt" <?php if (get_option('googleone_lang') == 'lt') echo 'selected="selected"'; ?>>
+                    Lithuanian
+                  </option>
+                  <option value="ms" <?php if (get_option('googleone_lang') == 'ms') echo 'selected="selected"'; ?>>
+                    Malay
+                  </option>
+                  <option value="no" <?php if (get_option('googleone_lang') == 'no') echo 'selected="selected"'; ?>>
+                    Norwegian
+                  </option>
+                  <option value="fa" <?php if (get_option('googleone_lang') == 'fa') echo 'selected="selected"'; ?>>
+                    Persian
+                  </option>
+                  <option value="pl" <?php if (get_option('googleone_lang') == 'pl') echo 'selected="selected"'; ?>>
+                    Polish
+                  </option>
+                  <option value="pt-BR" <?php if (get_option('googleone_lang') == 'pt-BR') echo 'selected="selected"'; ?>>
+                    Portuguese (Brazil)
+                  </option>
+                  <option value="pt-PT" <?php if (get_option('googleone_lang') == 'pt-PT') echo 'selected="selected"'; ?>>
+                    Portuguese (Portugal)
+                  </option> 
+                  <option value="ro" <?php if (get_option('googleone_lang') == 'ro') echo 'selected="selected"'; ?>>
+                    Romanian
+                  </option>
+                  <option value="ru" <?php if (get_option('googleone_lang') == 'ru') echo 'selected="selected"'; ?>>
+                    Russian
+                  </option>
+                  <option value="sr" <?php if (get_option('googleone_lang') == 'sr') echo 'selected="selected"'; ?>>
+                    Serbian
+                  </option>
+                  <option value="sv" <?php if (get_option('googleone_lang') == 'sv') echo 'selected="selected"'; ?>>
+                    Swedish
+                  </option>
+                  <option value="sk" <?php if (get_option('googleone_lang') == 'sk') echo 'selected="selected"'; ?>>
+                    Slovak
+                  </option>
+                  <option value="sl" <?php if (get_option('googleone_lang') == 'sl') echo 'selected="selected"'; ?>>
+                    Slovenian
+                  </option>
+                  <option value="es" <?php if (get_option('googleone_lang') == 'es') echo 'selected="selected"'; ?>>
+                    Spanish
+                  </option>
+                  <option value="es-419" <?php if (get_option('googleone_lang') == 'es-419') echo 'selected="selected"'; ?>>
+                    Spanish (Latin America)
+                  </option>
+                  <option value="th" <?php if (get_option('googleone_lang') == 'th') echo 'selected="selected"'; ?>>
+                    Thai
+                  </option>
+                  <option value="tr" <?php if (get_option('googleone_lang') == 'tr') echo 'selected="selected"'; ?>>
+                    Turkish
+                  </option>
+                  <option value="uk" <?php if (get_option('googleone_lang') == 'uk') echo 'selected="selected"'; ?>>
+                    Ukrainian
+                  </option>
+                  <option value="vi" <?php if (get_option('googleone_lang') == 'vi') echo 'selected="selected"'; ?>>
+                    Vietnamese
+                  </option>
+                </select></div>
+            
+            
+            <div style="padding:10px 0px;"><strong>Where</strong><br />
               <input type="checkbox" value="1" <?php if (get_option('googleone_display_page') == '1') echo 'checked="checked"'; ?> name="googleone_display_page" id="googleone_display_page" group="googleone_display"/>
               <label for="googleone_display_page">Display the button on pages</label>
               <br />
@@ -127,6 +261,7 @@ function googleone_options_page() {
               <label for="googleone_display_front">Display the button on the front page (home)</label>
               
             </div>
+            
             <div style="padding:10px 0px;">
               <strong>Display</strong>
 <select name="googleone_where" id="googleone_where">
@@ -192,6 +327,7 @@ function googleone_generate_button()
     $url = '';
 
 	$buttontype = get_option('googleone_button_type');
+	$buttonlang = get_option('googleone_lang');
 	$count = true;
 	
 	$buttonsize = 'tall';
@@ -221,7 +357,14 @@ function googleone_generate_button()
         $url = get_permalink();
     }
 	
-		$button = '<div name="googleone_share_1" style="'.get_option('googleone_style').'"><g:plusone size="'.$buttonsize.'" count="'.$count.'" href="'.$url.'"></g:plusone></div>';
+		$button = '<div name="googleone_share_1" style="position:relative;z-index:5;'.get_option('googleone_style').'"><g:plusone size="'.$buttonsize.'" count="'.$count.'" href="'.$url.'">';
+		
+		if ($buttonlang != 'en-US' && $buttonlang != '' )
+		{
+			$button = $button . '{lang: \'' .$buttonlang. '\'}';
+		}
+		
+		$button = $button . '</g:plusone></div>';
 
 	return $button . $content; 
 
@@ -237,6 +380,7 @@ function googleone_generate_static_button()
     }
 	
 	$buttontype = get_option('googleone_button_type');
+	$buttonlang = get_option('googleone_lang');
 	$count = true;
 	
 	$buttonsize = 'tall';
@@ -258,7 +402,14 @@ function googleone_generate_static_button()
 	} 
 	
 	
-	$button = '<div name="googleone_share_1" style="'.get_option('googleone_style').'"><g:plusone size="'.$buttonsize.'" count="'.$count.'" href="'.$url.'"></g:plusone></div>';
+	$button = '<div name="googleone_share_1" style="position:relative;z-index:5;'.get_option('googleone_style').'"><g:plusone size="'.$buttonsize.'" count="'.$count.'" href="'.$url.'">';
+	
+	if ($buttonlang != 'en-US' && $buttonlang != '' )
+		{
+			$button = $button . '{lang: \'' .$buttonlang. '\'}';
+		}
+		
+		$button = $button . '</g:plusone></div>';
 	
 }
 
@@ -319,6 +470,7 @@ function googleone_init(){
     if(function_exists('register_setting')){
 		
 		register_setting('googleone-options', 'googleone_button_type');
+		register_setting('googleone-options', 'googleone_lang');
         register_setting('googleone-options', 'googleone_display_page');
         register_setting('googleone-options', 'googleone_display_front');   
 		register_setting('googleone-options', 'googleone_style');   
@@ -329,7 +481,8 @@ function googleone_init(){
 }
 
 function googleone_activate(){
-	add_option('googleone_button_type', '7');	
+	add_option('googleone_button_type', '7');
+	add_option('googleone_lang', 'en-US');
 	add_option('googleone_display_page', '1');
     add_option('googleone_display_front', '1');
 

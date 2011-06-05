@@ -32,6 +32,12 @@ Tested upto 3.1.3
 * Works well with New Facebook Share and Tweetmeme Button.
 
 
+#### Bug Fixes
+
+* Fixed a bug which was making Google+1 button not clickable when installed with Facebook Share button.
+
+* Added Language Support.
+
 == Installation ==
 
 Follow the steps below to install the plugin.
